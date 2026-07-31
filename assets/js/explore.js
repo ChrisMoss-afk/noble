@@ -185,23 +185,61 @@ experience_track_element.addEventListener("touchend", (event) => {
 
 //COMMENT: [COLLECT PROCESS STAGES AND MANAGE ACTIVE DETAIL]
 const process_stage_elements = Array.from(document.querySelectorAll("[data-process-stage]"));
+const process_trigger_elements = process_stage_elements
+    .map((stage_element) => stage_element.querySelector(".process-stage__trigger"))
+    .filter(Boolean);
 
-function set_process_stage(active_stage_element) {
+function set_process_stage(active_stage_element, options = {}) {
+    const { move_focus = false } = options;
+
     process_stage_elements.forEach((stage_element) => {
         const is_active = stage_element === active_stage_element;
         stage_element.classList.toggle("is-active", is_active);
         const trigger_element = stage_element.querySelector(".process-stage__trigger");
         const panel_element = stage_element.querySelector(".process-stage__panel");
+
         trigger_element?.setAttribute("aria-expanded", String(is_active));
+        trigger_element?.setAttribute("aria-selected", String(is_active));
+        trigger_element?.setAttribute("tabindex", is_active ? "0" : "-1");
+
         if (panel_element) {
             panel_element.hidden = !is_active;
         }
     });
+
+    if (move_focus) {
+        active_stage_element.querySelector(".process-stage__trigger")?.focus();
+    }
 }
 
-process_stage_elements.forEach((stage_element) => {
+process_stage_elements.forEach((stage_element, stage_index) => {
     const trigger_element = stage_element.querySelector(".process-stage__trigger");
-    trigger_element?.addEventListener("click", () => set_process_stage(stage_element));
+    if (!trigger_element) {
+        return;
+    }
+
+    trigger_element.addEventListener("click", () => set_process_stage(stage_element));
+
+    trigger_element.addEventListener("keydown", (event) => {
+        let next_index = null;
+
+        if (["ArrowRight", "ArrowDown"].includes(event.key)) {
+            next_index = (stage_index + 1) % process_stage_elements.length;
+        } else if (["ArrowLeft", "ArrowUp"].includes(event.key)) {
+            next_index = (stage_index - 1 + process_stage_elements.length) % process_stage_elements.length;
+        } else if (event.key === "Home") {
+            next_index = 0;
+        } else if (event.key === "End") {
+            next_index = process_stage_elements.length - 1;
+        }
+
+        if (next_index === null) {
+            return;
+        }
+
+        event.preventDefault();
+        set_process_stage(process_stage_elements[next_index], { move_focus: true });
+    });
 });
 
 //COMMENT: §§§ SECTION 3: VIEWPORT AND HASH CONTINUITY §§§

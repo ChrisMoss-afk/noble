@@ -181,141 +181,174 @@
       <div class="chapter__inner chapter__inner--process">
         <aside class="chapter__context">
           <p class="eyebrow">Process</p>
-          <p>Understand what is true. Assess what it means. Build what matters. Move when you are ready.</p>
+          <p>Four stages. One continuous advisory relationship.</p>
         </aside>
 
         <div class="chapter__content process">
-          <!--COMMENT: [ORIENT THE VISITOR BEFORE ENTERING THE WORKING FIELD]-->
+          <!--COMMENT: [ORIENT THE VISITOR AROUND THE PROGRESSION, NOT THE INTERFACE]-->
           <header class="process__lead">
-            <h1>Every engagement follows the same four-step structure.</h1>
-            <p>It starts with a conversation and ends with a concrete plan built around <em>your business, your goals, and your timeline.</em></p>
+            <h1>From clarity to action.</h1>
+            <p>The work changes as your business changes. The sequence does not. We understand the owner and the business, assess what the evidence means, build around the priorities that matter, and stay beside you when it is time to move.</p>
           </header>
 
-          <!--COMMENT: [CONTAIN PROCESS DETAIL INSIDE A DEDICATED WORKING FIELD]-->
+          <!--COMMENT: [USE ONE CONTENT RHYTHM ACROSS ALL FOUR STAGES]-->
           <div class="process-workspace">
-            <div class="process-system" data-process-system>
-              <!--COMMENT: [DEFINE UNDERSTAND STAGE]-->
+            <div class="process-system" data-process-system role="tablist" aria-label="Noble advisory process">
+              <!--COMMENT: [STAGE 01 — UNDERSTAND]-->
               <article class="process-stage is-active" data-process-stage="understand">
-                <button class="process-stage__trigger" type="button" aria-expanded="true">
-                  <span>Understand</span>
-                  <span aria-hidden="true">+</span>
+                <button class="process-stage__trigger" id="process-tab-understand" type="button" role="tab" aria-selected="true" aria-controls="process-panel-understand" aria-expanded="true" tabindex="0">
+                  <span class="process-stage__trigger-number">01</span>
+                  <span class="process-stage__trigger-label">Understand</span>
+                  <span class="process-stage__trigger-icon" aria-hidden="true">+</span>
                 </button>
-                <div class="process-stage__panel">
+                <div class="process-stage__panel" id="process-panel-understand" role="tabpanel" aria-labelledby="process-tab-understand">
                   <div class="process-stage__intro">
-                    <h2>We start by listening.</h2>
+                    <div class="process-stage__heading">
+                      <span>Purpose</span>
+                      <h2>Start with the owner, not the transaction.</h2>
+                    </div>
                     <div class="process-stage__body">
-                      <p>Every strong transition starts with an honest picture of where you are.</p>
-                      <p>Most business owners spend years building something valuable without ever getting a clear, structured view of what it is worth, what is holding it back, and what would need to change before handing it on. We change that from the first interaction.</p>
+                      <div>
+                        <span>What happens</span>
+                        <p>We establish the context before recommending anything: what the business looks like today, what matters to you, where you are in your thinking, and which dependencies or unanswered questions could shape what comes next.</p>
+                      </div>
+                      <div class="process-stage__outcome">
+                        <span>You leave with</span>
+                        <p>A preliminary picture of where the business stands, the questions worth examining, and whether a deeper Noble engagement makes sense.</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="process-moments">
-                    <section>
-                      <span>Before we meet</span>
-                      <h3>What Happens</h3>
-                      <p>Before any engagement begins, we ask you to complete two short, structured instruments. They take about 15-20 minutes each and you complete them on your own time.</p>
-                      <h3 class="process-moments__receive">What You Receive</h3>
-                      <p>A preliminary picture of your business profile and the key areas we will look at. The first gives us a picture of your business fundamentals, your goals, your timeline, and where you are in your thinking about what comes next. The second goes deeper, looking at leadership, operations, dependencies, and what you want to protect, this is the baseline your entire Business Transition Program is built from.</p>
-                    </section>
-                    <section>
-                      <span>First conversation</span>
-                      <h3>What Happens</h3>
-                      <p>When necessary, we hold a 60-minute combined screen and alignment call, no cost, no obligation.</p>
-                      <h3 class="process-moments__receive">What You Receive</h3>
-                      <p>By the time we speak, we have a scored picture of your business across all four dimensions. Our first conversation is a readiness conversation, what we're seeing, where the gaps are, and what a full engagement would produce for you specifically.</p>
-                    </section>
-                    <section>
-                      <span>If there is a fit</span>
-                      <h3>What Happens</h3>
-                      <p>If there is a fit, we present the Noble Business Transition Program with scope, timeline, and flat fee.</p>
-                      <h3 class="process-moments__receive">What You Receive</h3>
-                      <p>A clear proposal. No surprises, no billable hours.</p>
-                    </section>
-                  </div>
+                  <ol class="process-sequence" aria-label="Understand stage sequence">
+                    <li><span>01</span><div><h3>Before we meet</h3><p>Two short assessments give us context on the business, your priorities, your timeline, and the dependencies that may affect transition.</p></div></li>
+                    <li><span>02</span><div><h3>First conversation</h3><p>We review what surfaced together, test assumptions, and clarify the questions that deserve deeper work.</p></div></li>
+                    <li><span>03</span><div><h3>If there is a fit</h3><p>You receive a defined scope, timeline, and flat fee for the Business Transition Program.</p></div></li>
+                  </ol>
                 </div>
               </article>
 
-              <!--COMMENT: [DEFINE ASSESS STAGE]-->
+              <!--COMMENT: [STAGE 02 — ASSESS]-->
               <article class="process-stage" data-process-stage="assess">
-                <button class="process-stage__trigger" type="button" aria-expanded="false">
-                  <span>Assess</span>
-                  <span aria-hidden="true">+</span>
+                <button class="process-stage__trigger" id="process-tab-assess" type="button" role="tab" aria-selected="false" aria-controls="process-panel-assess" aria-expanded="false" tabindex="-1">
+                  <span class="process-stage__trigger-number">02</span>
+                  <span class="process-stage__trigger-label">Assess</span>
+                  <span class="process-stage__trigger-icon" aria-hidden="true">+</span>
                 </button>
-                <div class="process-stage__panel" hidden>
+                <div class="process-stage__panel" id="process-panel-assess" role="tabpanel" aria-labelledby="process-tab-assess" hidden>
                   <div class="process-stage__intro">
-                    <h2>Four dimensions. One clear picture.</h2>
-                    <div class="process-stage__body">
-                      <p>The structured engagement that answers the four questions.</p>
-                      <p>See the four components above, this step produces your Ownership Transition and Continuity Report in full.</p>
+                    <div class="process-stage__heading">
+                      <span>Purpose</span>
+                      <h2>See the whole business clearly.</h2>
                     </div>
+                    <div class="process-stage__body">
+                      <div>
+                        <span>What happens</span>
+                        <p>Through the Business Transition Program, we examine the business across four connected dimensions and test what we learned during Understand. The goal is not more information. It is to distinguish the issues that materially affect value, continuity, and your available options.</p>
+                      </div>
+                      <div class="process-stage__outcome">
+                        <span>You leave with</span>
+                        <p>Your Ownership Transition and Continuity Report: a scored view of where the business stands, the gaps that matter most, and a practical order of work.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="process-assessment-flow" aria-label="Assessment dimensions combine into one integrated view">
+                    <span>Strategic direction</span>
+                    <span>Value &amp; financial health</span>
+                    <span>Owner independence</span>
+                    <span>Continuity</span>
+                    <strong>One integrated view</strong>
                   </div>
                 </div>
               </article>
 
-              <!--COMMENT: [DEFINE BUILD STAGE]-->
+              <!--COMMENT: [STAGE 03 — BUILD]-->
               <article class="process-stage" data-process-stage="build">
-                <button class="process-stage__trigger" type="button" aria-expanded="false">
-                  <span>Build</span>
-                  <span aria-hidden="true">+</span>
+                <button class="process-stage__trigger" id="process-tab-build" type="button" role="tab" aria-selected="false" aria-controls="process-panel-build" aria-expanded="false" tabindex="-1">
+                  <span class="process-stage__trigger-number">03</span>
+                  <span class="process-stage__trigger-label">Build</span>
+                  <span class="process-stage__trigger-icon" aria-hidden="true">+</span>
                 </button>
-                <div class="process-stage__panel" hidden>
+                <div class="process-stage__panel" id="process-panel-build" role="tabpanel" aria-labelledby="process-tab-build" hidden>
                   <div class="process-stage__intro">
-                    <h2>For owners who want to act on what the assessment surfaces.</h2>
+                    <div class="process-stage__heading">
+                      <span>Purpose</span>
+                      <h2>Turn the findings into progress.</h2>
+                    </div>
                     <div class="process-stage__body">
-                      <p>Most owners come out of Step 2 with three to five specific things worth doing before they consider a transaction.</p>
-                      <p>We offer three ways to stay engaged depending on what you need.</p>
+                      <div>
+                        <span>What happens</span>
+                        <p>We identify the few priorities most likely to improve readiness, reduce owner dependency, strengthen value, or clarify the transition path. Then we match the work to the level of support the business actually needs.</p>
+                      </div>
+                      <div class="process-stage__outcome">
+                        <span>You leave with</span>
+                        <p>A practical roadmap with clear priorities, ownership, and a cadence for moving the work forward without losing sight of the outcome.</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="process-pathways">
+                  <div class="process-pathways" aria-label="Ways Noble can stay engaged">
                     <section>
+                      <span>Ongoing advisory</span>
                       <h3>Strategic Roadmap Retainer</h3>
-                      <p>Monthly advisory support focused on closing the gaps that matter most, governance, leadership, operations, documentation, and value building. Structured. Accountable. Tied to measurable progress.</p>
+                      <p>Monthly support focused on the highest-priority gaps, with clear accountability and progress tied to the roadmap.</p>
                     </section>
                     <section>
+                      <span>Alignment &amp; decisions</span>
                       <h3>Transition Facilitation</h3>
-                      <p>Structured facilitation with you, your leadership team, or your board. Builds shared clarity on transition goals, decision-making authority, and pathway for ownership change.</p>
+                      <p>Structured work with owners, leaders, or boards to align goals, roles, decision authority, and the pathway for ownership change.</p>
                     </section>
                     <section>
+                      <span>Focused preparation</span>
                       <h3>Value Preparation Program</h3>
-                      <p>A structured 12-month program building the business toward transaction readiness, governance strengthening, operational documentation, succession planning, and preparation for buyer diligence.</p>
+                      <p>A structured 12-month engagement to strengthen the business for succession, diligence, or a future transaction.</p>
                     </section>
                   </div>
                 </div>
               </article>
 
-              <!--COMMENT: [DEFINE MOVE STAGE]-->
+              <!--COMMENT: [STAGE 04 — MOVE]-->
               <article class="process-stage" data-process-stage="move">
-                <button class="process-stage__trigger" type="button" aria-expanded="false">
-                  <span>Move</span>
-                  <span aria-hidden="true">+</span>
+                <button class="process-stage__trigger" id="process-tab-move" type="button" role="tab" aria-selected="false" aria-controls="process-panel-move" aria-expanded="false" tabindex="-1">
+                  <span class="process-stage__trigger-number">04</span>
+                  <span class="process-stage__trigger-label">Move</span>
+                  <span class="process-stage__trigger-icon" aria-hidden="true">+</span>
                 </button>
-                <div class="process-stage__panel" hidden>
+                <div class="process-stage__panel" id="process-panel-move" role="tabpanel" aria-labelledby="process-tab-move" hidden>
                   <div class="process-stage__intro">
-                    <h2>When the time comes to transact, we stay in the room.</h2>
+                    <div class="process-stage__heading">
+                      <span>Purpose</span>
+                      <h2>Move when the decision is yours.</h2>
+                    </div>
                     <div class="process-stage__body">
-                      <p>When you are ready to move toward a transaction, we coordinate from your side, not as brokers.</p>
-                      <p>We work with a curated network of legal, financial, and transaction specialists. You benefit from those relationships without having to find them yourself.</p>
+                      <div>
+                        <span>What happens</span>
+                        <p>When you choose to pursue a transition, Noble stays on the owner's side of the table. We help maintain continuity across the decisions, people, and specialist workstreams involved as the process becomes more complex.</p>
+                      </div>
+                      <div class="process-stage__outcome">
+                        <span>You leave with</span>
+                        <p>An owner-side advisor who keeps the process connected to the outcome you defined at the beginning, while the right specialists lead the work that belongs to them.</p>
+                      </div>
                     </div>
                   </div>
 
                   <div class="process-boundaries">
                     <section>
-                      <span>What We Do</span>
+                      <span>Noble stays beside you</span>
                       <ul>
-                        <li>Help you prepare your file and narrative for transaction</li>
-                        <li>Coordinate with legal, financial, and M&amp;A advisors from your side</li>
-                        <li>Help you evaluate transition pathways including strategic sale, MBO, and employee ownership</li>
-                        <li>Stay engaged through the process as your trusted advisor</li>
+                        <li>Prepare the story, priorities, and decision context for the transition</li>
+                        <li>Coordinate across legal, financial, and transaction advisors</li>
+                        <li>Help compare transition pathways and the trade-offs between them</li>
+                        <li>Stay engaged as decisions become more complex</li>
                       </ul>
                     </section>
                     <section>
-                      <span>What We Do Not Do</span>
+                      <span>Specialists lead</span>
                       <ul>
-                        <li>Broker the deal</li>
-                        <li>Replace your lawyer, accountant, or M&amp;A advisor</li>
-                        <li>Make the decision for you</li>
-                        <li>Disappear when the deal gets complicated</li>
+                        <li>Legal advice and documentation</li>
+                        <li>Tax and accounting advice</li>
+                        <li>Brokerage, buyer representation, and deal execution</li>
+                        <li>Other specialist work required by the transaction</li>
                       </ul>
                     </section>
                   </div>
